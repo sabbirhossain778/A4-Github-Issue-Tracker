@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Github Issue Tracker</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- daisyUI + tailwindcss -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <h1>all page</h1>
+<body class="bg-[#F8FAFC]">
+    <section id="navbar" class="mb-[60px]">
+        <div class="navbar bg-base-100 shadow-sm flex justify-between px-15">
+            <div id="nav-left" class="flex gap-2 items-center">
+                <img src="assets/github-logo.png" width="36px" alt="" srcset="">
+                <h3 class="font-semibold text-6 text-[#1F2937]">GitHub Issues Tracker</h3>
+            </div>
+            <!-- <div id="nav-right" class="flex gap-2">
+                <input type="text" placeholder="Search Issue" class="input input-bordered w-24 md:w-auto" />
+                <div tabindex="0" role="button" class="btn btn-primary font-semibold gap-2">
+                    <i class="fa-regular fa-plus flex items-center text-xl" style="color: white;"></i>New Issue
+                </div>
+            </div> -->
+            <div id="nav-right" class="flex items-center gap-2">
+                <label class="input input-bordered flex items-center gap-2 w-24 md:w-auto h-12">
+                    <svg class="h-4 w-4 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                    <input type="search" class="grow" placeholder="Search issues..." />
+                </label>
+
+                <div tabindex="0" role="button" class="btn btn-primary font-semibold flex items-center gap-2 text-white h-12">
+                    <i class="fa-regular fa-plus text-xl leading-none"></i>
+                    <span>New Issue</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="btn-section">
+        <div class="w-10/12 mx-auto flex pl-6 gap-4 border-2">
+            <button class="btn btn-soft btn-primary">All</button>
+            <button class="btn btn-soft btn-primary">Open</button>
+            <button class="btn btn-soft btn-primary">Closed</button>
+        </div>
+    </section>
+
+    <script src="./script/home.js"></script>
 </body>
 </html>
