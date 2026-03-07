@@ -24,14 +24,14 @@
             <div class="card-body">
                 <fieldset class="fieldset">
                 <label class="label text-[#1F2937] font-medium text-[16px]">Username</label>
-                <input type="text" class="input placeholder:text-[#64748B]" placeholder="Enter Username" required />
+                <input id="input-user-name" type="text" value="admin" class="input placeholder:text-[#64748B]" placeholder="Enter Username" required />
                 <p class="text-[#4A00FF]">Default: admin</p>
             
                 <label class="label text-[#1F2937] font-medium text-[16px]">Password</label>
-                <input type="password" class="input placeholder:text-[#64748B]" placeholder="Enter Password" required />
+                <input id="input-user-password" type="password" value="admin123" class="input placeholder:text-[#64748B]" placeholder="Enter Password" required />
                 <p class="text-[#4A00FF]">Default: admin123</p>
 
-                <button class="btn btn-primary mt-4">Sign In</button>
+                <button id="login-btn" class="btn btn-primary mt-4">Sign In</button>
                 </fieldset>
             </div>
         </div>
@@ -46,5 +46,6 @@
             </div>
         </div>
     </section>
+    <script src="script/login.js"></script>
 </body>
 </html>
