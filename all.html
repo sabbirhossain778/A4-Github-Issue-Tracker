@@ -21,12 +21,6 @@
                 <img src="assets/github-logo.png" width="36px" alt="" srcset="">
                 <h3 class="font-semibold text-6 text-[#1F2937]">GitHub Issues Tracker</h3>
             </div>
-            <!-- <div id="nav-right" class="flex gap-2">
-                <input type="text" placeholder="Search Issue" class="input input-bordered w-24 md:w-auto" />
-                <div tabindex="0" role="button" class="btn btn-primary font-semibold gap-2">
-                    <i class="fa-regular fa-plus flex items-center text-xl" style="color: white;"></i>New Issue
-                </div>
-            </div> -->
             <div id="nav-right" class="flex items-center gap-2">
                 <label class="input input-bordered flex items-center gap-2 w-24 md:w-auto h-12">
                     <svg class="h-4 w-4 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -45,13 +39,82 @@
     </section>
 
     <section id="btn-section">
-        <div class="w-10/12 mx-auto flex pl-6 gap-4 border-2">
-            <button class="btn btn-soft btn-primary">All</button>
+        <div class="w-10/12 mx-auto flex pl-6 gap-4 py-6 bg-base-100 shadow-sm">
+            <button onclick="loadAllCard()" class="btn btn-soft btn-primary">All</button>
             <button class="btn btn-soft btn-primary">Open</button>
             <button class="btn btn-soft btn-primary">Closed</button>
         </div>
     </section>
 
+    <section id="issues-section" class="w-10/12 mx-auto m-6 flex justify-between p-6 bg-base-100 shadow-sm">
+        <div class="flex items-center gap-4">
+            <img src="assets/Aperture.png" width="50px" alt="" srcset="">
+            <div class="">
+                <h4 class="text-xl font-semibold text-[#1F2937]"><span id="issue-count">50</span> Issues</h4>
+                <p class="text-lg text-[#64748B]">Track and manage your project issues</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col-2 gap-4 items-center">
+            <p class="flex items-center gap-2"><span class="w-3 h-3 bg-[#00A96E] rounded-full inline-block"></span>open</p>
+            <p class="flex items-center gap-2"><span class="w-3 h-3 bg-[#A855F7] rounded-full inline-block"></span>closed</p>
+            </div>
+    </section>
+
+    <section id="card-container" class="bg-gray-100 p-10 w-10/12 mx-auto rounded-lg shadow-sm grid grid-cols-3 gap-6">
+        <!-- issue cards will be rendered here -->
+        <div class="bg-base-100 shadow-sm p-3 rounded-xl border-t-4 border-[#00A96E] space-y-2">
+            <div class="flex justify-between">
+                <img src="assets/Open-Status.png" alt="" srcset="">
+                <p class="font-medium text-3 leading-none">High</p>
+            </div>
+            <h3 class="font-semibold text-[14px] text-[#1F2937]">Fix navigation menu on mobile devices</h3>
+            <p class="text-[#64748B] text-3">The navigation menu doesn't collapse properly on mobile devices...</p>
+            <div class="flex gap-3">
+                <p class="font-medium text-3 leading-none">Bug</p>
+                <p class="font-medium text-3 leading-none">Help wanted</p>
+            </div>
+            <hr class="border-dotted">
+            <div>
+                <p class="text-3 text-[#64748B] leading-none">#1 by john_doe</p>
+                <p class="text-3 text-[#64748B] leading-none">1/15/2024</p>
+            </div>
+        </div>
+        <div class="bg-base-100 shadow-sm p-3 rounded-xl border-t-4 border-[#00A96E] space-y-2">
+            <div class="flex justify-between">
+                <img src="assets/Open-Status.png" alt="" srcset="">
+                <p class="font-medium text-3 leading-none">High</p>
+            </div>
+            <h3 class="font-semibold text-[14px] text-[#1F2937]">Fix navigation menu on mobile devices</h3>
+            <p class="text-[#64748B] text-3">The navigation menu doesn't collapse properly on mobile devices...</p>
+            <div class="flex gap-3">
+                <p class="font-medium text-3 leading-none">Bug</p>
+                <p class="font-medium text-3 leading-none">Help wanted</p>
+            </div>
+            <hr class="border-dotted">
+            <div>
+                <p class="text-3 text-[#64748B] leading-none">#1 by john_doe</p>
+                <p class="text-3 text-[#64748B] leading-none">1/15/2024</p>
+            </div>
+        </div>
+        <div class="bg-base-100 shadow-sm p-3 rounded-xl border-t-4 border-[#00A96E] space-y-2">
+            <div class="flex justify-between">
+                <img src="assets/Open-Status.png" alt="" srcset="">
+                <p class="font-medium text-3 leading-none">High</p>
+            </div>
+            <h3 class="font-semibold text-[14px] text-[#1F2937]">Fix navigation menu on mobile devices</h3>
+            <p class="text-[#64748B] text-3">The navigation menu doesn't collapse properly on mobile devices...</p>
+            <div class="flex gap-3">
+                <p class="font-medium text-3 leading-none">Bug</p>
+                <p class="font-medium text-3 leading-none">Help wanted</p>
+            </div>
+            <hr class="border-dotted">
+            <div>
+                <p class="text-3 text-[#64748B] leading-none">#1 by john_doe</p>
+                <p class="text-3 text-[#64748B] leading-none">1/15/2024</p>
+            </div>
+        </div>
+    </section>
     <script src="./script/home.js"></script>
 </body>
 </html>
