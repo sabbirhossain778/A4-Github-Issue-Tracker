@@ -38,13 +38,15 @@
         </div>
     </section>
 
+
     <section id="btn-section">
-        <div class="w-10/12 mx-auto flex pl-6 gap-4 py-6 bg-base-100 shadow-sm">
-            <button onclick="loadAllCard()" class="btn btn-soft btn-primary">All</button>
-            <button class="btn btn-soft btn-primary">Open</button>
-            <button class="btn btn-soft btn-primary">Closed</button>
+        <div class="w-10/12 mx-auto flex pl-6 gap-4 py-6 bg-base-100 shadow-sm ">
+            <button onclick="handleActive(this)" id="all-btn" class="btn btn-soft btn-primary btn-active">All</button>
+            <button onclick="handleActive(this)" id="open-btn"  class="btn btn-soft btn-primary ">Open</button>
+            <button onclick="handleActive(this)" id="closed-btn" class="btn btn-soft btn-primary">Closed</button>
         </div>
     </section>
+
 
     <section id="issues-section" class="w-10/12 mx-auto m-6 flex justify-between p-6 bg-base-100 shadow-sm">
         <div class="flex items-center gap-4">
@@ -61,9 +63,12 @@
             </div>
     </section>
 
-    <section id="card-container" class="bg-gray-100 p-10 w-10/12 mx-auto rounded-lg shadow-sm grid grid-cols-3 gap-6">
+
+
+    <section id="card-container" class="bg-gray-100 p-8 w-10/12 mx-auto rounded-lg shadow-sm grid grid-cols-4 gap-6">
         <!-- issue cards will be rendered here -->
-        <div class="bg-base-100 shadow-sm p-3 rounded-xl border-t-4 border-[#00A96E] space-y-2">
+
+        <!-- <div class="bg-base-100 shadow-sm p-3 rounded-xl border-t-5 border-[#00A96E] space-y-2">
             <div class="flex justify-between">
                 <img src="assets/Open-Status.png" alt="" srcset="">
                 <p class="font-medium text-3 leading-none">High</p>
@@ -79,42 +84,10 @@
                 <p class="text-3 text-[#64748B] leading-none">#1 by john_doe</p>
                 <p class="text-3 text-[#64748B] leading-none">1/15/2024</p>
             </div>
-        </div>
-        <div class="bg-base-100 shadow-sm p-3 rounded-xl border-t-4 border-[#00A96E] space-y-2">
-            <div class="flex justify-between">
-                <img src="assets/Open-Status.png" alt="" srcset="">
-                <p class="font-medium text-3 leading-none">High</p>
-            </div>
-            <h3 class="font-semibold text-[14px] text-[#1F2937]">Fix navigation menu on mobile devices</h3>
-            <p class="text-[#64748B] text-3">The navigation menu doesn't collapse properly on mobile devices...</p>
-            <div class="flex gap-3">
-                <p class="font-medium text-3 leading-none">Bug</p>
-                <p class="font-medium text-3 leading-none">Help wanted</p>
-            </div>
-            <hr class="border-dotted">
-            <div>
-                <p class="text-3 text-[#64748B] leading-none">#1 by john_doe</p>
-                <p class="text-3 text-[#64748B] leading-none">1/15/2024</p>
-            </div>
-        </div>
-        <div class="bg-base-100 shadow-sm p-3 rounded-xl border-t-4 border-[#00A96E] space-y-2">
-            <div class="flex justify-between">
-                <img src="assets/Open-Status.png" alt="" srcset="">
-                <p class="font-medium text-3 leading-none">High</p>
-            </div>
-            <h3 class="font-semibold text-[14px] text-[#1F2937]">Fix navigation menu on mobile devices</h3>
-            <p class="text-[#64748B] text-3">The navigation menu doesn't collapse properly on mobile devices...</p>
-            <div class="flex gap-3">
-                <p class="font-medium text-3 leading-none">Bug</p>
-                <p class="font-medium text-3 leading-none">Help wanted</p>
-            </div>
-            <hr class="border-dotted">
-            <div>
-                <p class="text-3 text-[#64748B] leading-none">#1 by john_doe</p>
-                <p class="text-3 text-[#64748B] leading-none">1/15/2024</p>
-            </div>
-        </div>
+        </div> -->
+    
     </section>
+
     <script src="./script/home.js"></script>
 </body>
 </html>

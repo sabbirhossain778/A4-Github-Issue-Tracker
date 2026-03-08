@@ -2,3 +2,11 @@
 *{
     font-family: "Geist", sans-serif;
 }
+.border-top-green{
+    border-top: 6px solid #00A96E;
+    border-radius: 10px;
+}
+.border-top-blue{
+    border-top: 6px solid #4A00FF;
+    border-radius: 10px;
+}
