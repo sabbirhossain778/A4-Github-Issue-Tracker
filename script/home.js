@@ -66,7 +66,6 @@ const displayIssueDetail = (details) =>{
     document.getElementById('my_modal').showModal();
 }
 
-
 const loadAllCard = (issues) =>{ 
     const cardContainer = document.getElementById('card-container');
     cardContainer.innerHTML = '';
@@ -106,14 +105,13 @@ const loadAllCard = (issues) =>{
         }
         cardContainer.append(card);
     }
-
+    manageSpinner(false);
     let cardsAmount = document.getElementById('card-container').childElementCount;
     // console.log(cardsAmount);
     const counts = document.getElementById('issue-count')
     counts.innerText = cardsAmount;  
 }
  
-
 function handleActive(clickedButton) {
     // 1- remove 'btn-active' class from all buttons
     const buttons = document.querySelectorAll('.btn-primary');
@@ -136,3 +134,14 @@ function handleActive(clickedButton) {
     }
 }
 loadAllIssues();
+
+
+const searchInput = document.getElementById('input-search');
+searchInput.addEventListener('input', () => {
+    const searchText = searchInput.value.toLowerCase();
+
+    const filteredIssues = allIssuesData.filter(issue => 
+        issue.title.toLowerCase().includes(searchText)
+    );
+    loadAllCard(filteredIssues);
+});
